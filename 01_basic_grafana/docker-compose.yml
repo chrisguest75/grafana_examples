@@ -1,0 +1,16 @@
+services:
+    grafana:
+        image: grafana/grafana
+        ports:
+            - "3000:3000"    
+        volumes:
+            - ./provisioning:/etc/grafana/provisioning            
+        deploy:
+            restart_policy:
+                condition: on-failure
+        networks:
+            - overlay                
+
+networks:
+    overlay:
+
