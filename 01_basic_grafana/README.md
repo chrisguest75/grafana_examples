@@ -31,10 +31,12 @@ docker compose down
 
 ## Troubleshooting
 
-To exec into the grafana container.  
-
 ```sh
+# To exec into the grafana container.  
 docker compose exec -it grafana /bin/bash  
+
+# get logs 
+docker compose logs grafana
 ```
 
 ## Resources

@@ -1,0 +1,27 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: 'CloudWatch'
+    orgId: 1
+
+datasources:
+  - name: 'CloudWatch'
+    type: 'cloudwatch'
+    typeName: 'CloudWatch'
+    access: 'proxy'
+    orgId: 1
+    url: ''
+    isDefault: true
+    version: 1
+    editable: false
+    typeLogoUrl: 'public/app/plugins/datasource/cloudwatch/img/amazon-web-services.png'
+    password": ""
+    user: ""
+    database: ""
+    basicAuth: false
+    readOnly: false
+    jsonData:
+      assumeRoleArn: '${AWS_ROLE_ARN}'
+      authType: 'credentials'
+      defaultRegion: 'us-east-1'
+      profile: ''
