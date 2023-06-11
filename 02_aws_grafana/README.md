@@ -33,8 +33,17 @@ We can manually add a datasource or we can use the automated provisioning system
 Once created you can export it as json.  
 
 ```sh
-curl -X GET -H "Authorization: Basic YWRtaW46YWRtaW4=" http://localhost:3000/api/datasources
+curl -s -X GET -H "Authorization: Basic YWRtaW46YWRtaW4=" http://localhost:3000/api/datasources | yq -P --output-format=yaml 
 ```
+
+## Configuring Dashboards
+
+The example contains dashboards that were imported.  
+
+* AWS ECS - Visualize AWS ECS metrics - ID: 551  
+* AWS Billing - Visualize estimated AWS charges per AWS resource (EC2, S3, ...) - ID: 139  
+* AWS SQS - Visualize AWS SQS metrics - ID: 584
+* AWS SNS - Visualize AWS SNS metrics - ID: 581
 
 ## Cleanup
 

@@ -17,10 +17,10 @@ open http://localhost:3000
 
 We can manually add a datasource or we can use the automated provisioning system. [Docs](https://grafana.com/docs/grafana/latest/administration/provisioning/)  
 
-Once created you can export it as json.  
+Once created you can export it as json and convert to yaml using `yq`.  
 
 ```sh
-curl -X GET -H "Authorization: Basic YWRtaW46YWRtaW4=" http://localhost:3000/api/datasources
+curl -s -X GET -H "Authorization: Basic YWRtaW46YWRtaW4=" http://localhost:3000/api/datasources | yq -P --output-format=yaml 
 ```
 
 ## Cleanup

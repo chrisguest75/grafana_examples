@@ -2,10 +2,10 @@
 
 A repository for showing examples of grafanalabs technology.
 
-TODO:
+NOTE:
 
-* Json render https://grafana.com/grafana/plugins/simpod-json-datasource/
-* homehub - https://github.com/jamesnetherton/homehub-metrics-exporter/blob/master/README.md
+* When exporting dashboards remove all of the selected fields.  
+* Datasources when exported have to be copied into a template.  
 
 ## 01 basic grafana
 
