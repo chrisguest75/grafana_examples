@@ -23,6 +23,12 @@ Once created you can export it as json.
 curl -X GET -H "Authorization: Basic YWRtaW46YWRtaW4=" http://localhost:3000/api/datasources
 ```
 
+## Cleanup
+
+```bash
+docker compose down
+```
+
 ## Troubleshooting
 
 To exec into the grafana container.  
