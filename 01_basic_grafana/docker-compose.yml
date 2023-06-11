@@ -4,7 +4,8 @@ services:
         ports:
             - "3000:3000"    
         volumes:
-            - ./provisioning:/etc/grafana/provisioning            
+            - ./provisioning:/etc/grafana/provisioning
+
         deploy:
             restart_policy:
                 condition: on-failure
